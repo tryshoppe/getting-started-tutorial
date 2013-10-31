@@ -1,0 +1,12 @@
+<h2>Make your payment</h2>
+<%= form_tag do %>
+  <dl>
+    <dt><%= label_tag 'card_number' %></dt>
+    <dd><%= text_field_tag 'card_number' %></dd>
+    <dt><%= label_tag 'expiry' %></dt>
+    <dd><%= text_field_tag 'expiry' %></dd>
+    <dt><%= label_tag 'security_code' %></dt>
+    <dd><%= text_field_tag 'security_code' %></dd>
+    <dd><%= submit_tag "Continue" %></dd>
+  </dl>
+<% end %>

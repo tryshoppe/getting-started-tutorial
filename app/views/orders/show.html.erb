@@ -1,0 +1,3 @@
+<h2>Your basket</h2>
+<%= render 'items', :order => current_order %>
+<p><%= link_to 'Empty basket', basket_path, :method => :delete %></p>

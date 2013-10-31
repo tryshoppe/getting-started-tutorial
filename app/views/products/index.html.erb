@@ -1,0 +1,12 @@
+<% @products.each do |category, products| %>
+  <h3><%= category.name %></h3>
+  <ul>
+    <% products.each do |product| %>
+    <li>
+      <h4><%= link_to product.name, product_path(product.permalink) %></h4>
+      <p><%= product.short_description %></p>
+      <p><b>Price:</b> <%= number_to_currency product.price %></p>
+    </li>
+    <% end %>
+  </ul>
+<% end %>
